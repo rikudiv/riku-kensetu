@@ -53,16 +53,54 @@ nav a:hover {
     flex-direction: column; /*非ローセクションの要素を縦方向に配置する*/
     justify-content: center; /*ヒーローセクションの要素を縦方向に中央に配置する*/
     align-items: center; /*ヒーローセクションの要素を横方向に中央に配置する*/
+    padding: 0 20px; /*ヒーローセクションの左右の余白を20pxにする*/
+    text-align: center; /*ヒーローセクションのテキストを中央揃えにする*/
 }
 .hero h2 {
     font-size: 48px;
     color: var(--navy);
     font-weight: bold;
 }
+
+.hero h2 span {
+    display: inline-block;
+}
+
 .hero p {
     font-size: 20px;
     color: var(--navy);
 }
+
+.estimate-btn {
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.estimate-btn:hover {
+    color: #110701;
+}
+
+#about dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+
+}
+
+#about dt,#about dd {
+    padding :10px 0%;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-section {
+    padding: 60px 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    }
 
 @media (max-width: 768px) {
     nav {
@@ -82,18 +120,8 @@ nav a:hover {
     nav a {
         display: block;
     }
+
+    .hero h2 {
+        font-size:28px;
+    }
 }    
-
-.estimate-btn {
-    background-color: var(--orange);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.estimate-btn:hover {
-    color: #110701;
-}
-

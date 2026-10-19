@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .hero h2 span {
-    display: inline-block;
+    display: inline-block;/* span要素をインラインブロックにする */
 }
 
 .hero p {
@@ -74,10 +74,10 @@ nav a:hover {
 .estimate-btn {
     background-color: var(--orange);
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+    text-decoration: none;/* リンクの下線を消す */
+    padding: 10px 20px;/* ボタンの上下の余白を10px、左右の余白を20pxにする */
+    border-radius: 10px;/* 角を丸くする */
+    margin-top: 20px;/* ボタンの上の余白を20pxにする */
 }
 
 .estimate-btn:hover {
@@ -96,11 +96,31 @@ nav a:hover {
 }
 
 .content-section {
-    padding: 60px 10px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 60px 10px;/* コンテンツセクションの上下の余白を60px、左右の余白を10pxにする */
+    max-width: 1000px;/* コンテンツセクションの最大幅を1000pxにする */
+    margin: 0 auto;/* コンテンツセクションを中央に配置する */
     
     }
+
+.service-list {
+    display: grid;/* サービスリストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3,1fr);/* サービスリストを3列にする */
+    gap: 20px;/* サービスリストのマス目の間隔を20pxにする */
+    margin-top:30px;/* サービスリストの上の余白を30pxにする */
+
+}
+
+.service-card {
+    background-color: #f4efe6;/* サービスカードの背景色を白色にする */
+    padding: 50px 10px ;/* サービスカードの上下の余白を40px、左右の余白を0pxにする */
+    border-radius: 10px;/* サービスカードの角を丸くする */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* サービスカードに影をつける */
+    text-align: center;/* サービスカードのテキストを中央揃えにする */
+}
+
+.service-card h3 {
+    color: var(--navy);/* サービスカードの見出しの色をnavyにする */
+}
 
 @media (max-width: 768px) {
     nav {
@@ -124,4 +144,9 @@ nav a:hover {
     .hero h2 {
         font-size:28px;
     }
+
+    .service-list {
+        grid-template-columns: 1fr;/* サービスリストを1列にする */
+    }
+
 }    

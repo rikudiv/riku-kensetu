@@ -122,6 +122,31 @@ nav a:hover {
     color: var(--navy);/* サービスカードの見出しの色をnavyにする */
 }
 
+.works-list {
+    display: grid;/* 施工事例リストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3,1fr);/* 施工事例リストを3列にする */
+    gap: 20px;/* 施工事例リストのマス目の間隔を20pxにする */
+}
+
+.works-card img {
+    width: 100%;/* 施工事例カードの画像の幅を100%にする */
+    height: 200px;/* 施工事例カードの画像の高さを200pxにする */
+    object-fit: cover;/* 施工事例カードの画像のアスペクト比を維持する */
+    border-radius: 10px;/* 施工事例カードの画像の角を丸くする */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -147,6 +172,10 @@ nav a:hover {
 
     .service-list {
         grid-template-columns: 1fr;/* サービスリストを1列にする */
+    }
+
+    .works-list {
+        grid-template-columns: 1fr;/* 施工事例リストを1列にする */
     }
 
 }    

@@ -191,13 +191,13 @@
         <section id="contact" class="content-section">
             <h2>お問い合わせ</h2>
             <p>お気軽にお問い合わせください。</p>
-            <form>
+            <form action="https://formspree.io/f/xljjrbeg" method="post">
                 <p>お名前</p> <!-- お名前のらん -->
-                <input type="text">
+                <input type="text" name="name"> <!-- お名前の入力欄 -->
                 <p>メールアドレス</p>
-                <input type="email"> 
+                <input type="email" name="email"> <!-- メールアドレスの入力欄 -->
                 <p>お問い合わせ内容</p>
-                <textarea></textarea> <!-- ここにお問い合わせ内容を入力するテキストエリアを追加 -->
+                <textarea name="message"></textarea> <!-- ここにお問い合わせ内容を入力するテキストエリアを追加 -->
                 <button type="submit">送信する</button> <!-- 送信ボタンを追加 -->
             </form> 
         </section>

@@ -1,12 +1,17 @@
 :root {
-    --navy: #1a2b4c;/* 「navy」という名前の箱に、この色を入れる */
-    --orange: #e07a3e;/* 「orange」という名前の箱に、この色を入れる */
+    --navy: #1a2b4c;
+    /* 「navy」という名前の箱に、この色を入れる */
+    --orange: #e07a3e;
+    /* 「orange」という名前の箱に、この色を入れる */
 }
 
 * {
-    margin: 0; /* すべての要素の余白を0にする */
-    padding: 0; /* すべての要素の余白を0にする */
-    box-sizing: border-box; /* すべての要素のボックスサイズをborder-boxにする */
+    margin: 0;
+    /* すべての要素の余白を0にする */
+    padding: 0;
+    /* すべての要素の余白を0にする */
+    box-sizing: border-box;
+    /* すべての要素のボックスサイズをborder-boxにする */
 }
 
 body {
@@ -15,47 +20,70 @@ body {
 }
 
 header {
-    background-color: var(--navy); /* ヘッダーの背景色をnavyにする */
+    background-color: var(--navy);
+    /* ヘッダーの背景色をnavyにする */
     color: white;
-    display: flex; /* ヘッダー内の要素をフレックスボックスで配置する */
-    justify-content: space-between; /* ヘッダー内の要素を左右に配置する */
-    align-items: center; /* ヘッダー内の要素を縦方向に中央揃えにする */
-    padding: 25px 55px; /* ヘッダーの上下の余白を25px、左右の余白を55pxにする */
+    display: flex;
+    /* ヘッダー内の要素をフレックスボックスで配置する */
+    justify-content: space-between;
+    /* ヘッダー内の要素を左右に配置する */
+    align-items: center;
+    /* ヘッダー内の要素を縦方向に中央揃えにする */
+    padding: 25px 55px;
+    /* ヘッダーの上下の余白を25px、左右の余白を55pxにする */
 
 }
 
 nav a {
-    text-decoration: none; /* リンクの下線を消す */
-    color: #faf8f8; 
-    margin: 20px; /* リンクの左右の余白を20pxにする */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    color: #faf8f8;
+    margin: 20px;
+    /* リンクの左右の余白を20pxにする */
 
 }
 
 nav a:hover {
-    color: var(--orange); /* ホバー時のリンクの色をorangeにする */
+    color: var(--orange);
+    /* ホバー時のリンクの色をorangeにする */
 
 }
 
 .menu-btn {
-    display: none; /* デフォルトでは非表示にする */
-    background: none; /* 背景を透明にする */
-    border: none; /* 枠線をなくす */
-    color: white;   /* 文字色を白にする */
-    font-size: 28px; /* フォントサイズを28pxにする */
-    cursor: pointer; /* カーソルをポインターにする */
+    display: none;
+    /* デフォルトでは非表示にする */
+    background: none;
+    /* 背景を透明にする */
+    border: none;
+    /* 枠線をなくす */
+    color: white;
+    /* 文字色を白にする */
+    font-size: 28px;
+    /* フォントサイズを28pxにする */
+    cursor: pointer;
+    /* カーソルをポインターにする */
 
 }
 
 .hero {
-    height: 500px; /*ヒーローセクションの高さを５００pにする*/
-    background-color: #f4efe6; /*ヒーローセクションの背景色を白色にする*/
-    display: flex; /*ヒーロセクションの要素をフレックスボックスで配置する*/
-    flex-direction: column; /*非ローセクションの要素を縦方向に配置する*/
-    justify-content: center; /*ヒーローセクションの要素を縦方向に中央に配置する*/
-    align-items: center; /*ヒーローセクションの要素を横方向に中央に配置する*/
-    padding: 0 20px; /*ヒーローセクションの左右の余白を20pxにする*/
-    text-align: center; /*ヒーローセクションのテキストを中央揃えにする*/
+    height: 500px;
+    /*ヒーローセクションの高さを５００pにする*/
+    background-color: #f4efe6;
+    /*ヒーローセクションの背景色を白色にする*/
+    display: flex;
+    /*ヒーロセクションの要素をフレックスボックスで配置する*/
+    flex-direction: column;
+    /*非ローセクションの要素を縦方向に配置する*/
+    justify-content: center;
+    /*ヒーローセクションの要素を縦方向に中央に配置する*/
+    align-items: center;
+    /*ヒーローセクションの要素を横方向に中央に配置する*/
+    padding: 0 20px;
+    /*ヒーローセクションの左右の余白を20pxにする*/
+    text-align: center;
+    /*ヒーローセクションのテキストを中央揃えにする*/
 }
+
 .hero h2 {
     font-size: 48px;
     color: var(--navy);
@@ -63,7 +91,8 @@ nav a:hover {
 }
 
 .hero h2 span {
-    display: inline-block;/* span要素をインラインブロックにする */
+    display: inline-block;
+    /* span要素をインラインブロックにする */
 }
 
 .hero p {
@@ -74,11 +103,16 @@ nav a:hover {
 .estimate-btn {
     background-color: var(--orange);
     color: white;
-    text-decoration: none;/* リンクの下線を消す */
-    padding: 10px 20px;/* ボタンの上下の余白を10px、左右の余白を20pxにする */
-    border-radius: 10px;/* 角を丸くする */
-    margin-top: 20px;/* ボタンの上の余白を20pxにする */
-    display: inline-block;/* ボタンをインラインブロックにする */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    padding: 10px 20px;
+    /* ボタンの上下の余白を10px、左右の余白を20pxにする */
+    border-radius: 10px;
+    /* 角を丸くする */
+    margin-top: 20px;
+    /* ボタンの上の余白を20pxにする */
+    display: inline-block;
+    /* ボタンをインラインブロックにする */
 }
 
 .estimate-btn:hover {
@@ -91,63 +125,92 @@ nav a:hover {
 
 }
 
-#about dt,#about dd {
-    padding :10px 0%;
+#about dt,
+#about dd {
+    padding: 10px 0%;
     border-bottom: 1px solid #ccc;
 }
 
 .content-section {
-    padding: 60px 10px;/* コンテンツセクションの上下の余白を60px、左右の余白を10pxにする */
-    max-width: 1000px;/* コンテンツセクションの最大幅を1000pxにする */
-    margin: 0 auto;/* コンテンツセクションを中央に配置する */
-    
-    }
+    padding: 60px 10px;
+    /* コンテンツセクションの上下の余白を60px、左右の余白を10pxにする */
+    max-width: 1000px;
+    /* コンテンツセクションの最大幅を1000pxにする */
+    margin: 0 auto;
+    /* コンテンツセクションを中央に配置する */
+
+}
 
 .service-list {
-    display: grid;/* サービスリストをグリッドレイアウトにする（マス目に並べる） */
-    grid-template-columns: repeat(3,1fr);/* サービスリストを3列にする */
-    gap: 20px;/* サービスリストのマス目の間隔を20pxにする */
-    margin-top:30px;/* サービスリストの上の余白を30pxにする */
+    display: grid;
+    /* サービスリストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3, 1fr);
+    /* サービスリストを3列にする */
+    gap: 20px;
+    /* サービスリストのマス目の間隔を20pxにする */
+    margin-top: 30px;
+    /* サービスリストの上の余白を30pxにする */
 
 }
 
 .service-card {
-    background-color: #f4efe6;/* サービスカードの背景色を白色にする */
-    padding: 50px 10px ;/* サービスカードの上下の余白を40px、左右の余白を0pxにする */
-    border-radius: 10px;/* サービスカードの角を丸くする */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* サービスカードに影をつける */
-    text-align: center;/* サービスカードのテキストを中央揃えにする */
+    background-color: #f4efe6;
+    /* サービスカードの背景色を白色にする */
+    padding: 50px 10px;
+    /* サービスカードの上下の余白を40px、左右の余白を0pxにする */
+    border-radius: 10px;
+    /* サービスカードの角を丸くする */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* サービスカードに影をつける */
+    text-align: center;
+    /* サービスカードのテキストを中央揃えにする */
 }
 
 .service-card h3 {
-    color: var(--navy);/* サービスカードの見出しの色をnavyにする */
+    color: var(--navy);
+    /* サービスカードの見出しの色をnavyにする */
 }
 
 .works-list {
-    display: grid;/* 施工事例リストをグリッドレイアウトにする（マス目に並べる） */
-    grid-template-columns: repeat(3,1fr);/* 施工事例リストを3列にする */
-    gap: 20px;/* 施工事例リストのマス目の間隔を20pxにする */
-    margin-top: 50px;/* 施工事例リストの上の余白を50pxにする */
+    display: grid;
+    /* 施工事例リストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3, 1fr);
+    /* 施工事例リストを3列にする */
+    gap: 20px;
+    /* 施工事例リストのマス目の間隔を20pxにする */
+    margin-top: 50px;
+    /* 施工事例リストの上の余白を50pxにする */
 }
 
 .works-card img {
-    width: 100%;/* 施工事例カードの画像の幅を100%にする */
-    height: 200px;/* 施工事例カードの画像の高さを200pxにする */
-    object-fit: cover;/* 施工事例カードの画像のアスペクト比を維持する */
-    border-radius: 10px;/* 施工事例カードの画像の角を丸くする */
+    width: 100%;
+    /* 施工事例カードの画像の幅を100%にする */
+    height: 200px;
+    /* 施工事例カードの画像の高さを200pxにする */
+    object-fit: cover;
+    /* 施工事例カードの画像のアスペクト比を維持する */
+    border-radius: 10px;
+    /* 施工事例カードの画像の角を丸くする */
 }
 
 .works-card {
-    background-color: #f4efe6;/* 施工事例カードの背景色を白色にする */
-    padding: 10px 10px ;/* 施工事例カードの上下の余白を20px 10px、左右の余白を0pxにする */
-    border-radius: 10px;/* 施工事例カードの角を丸くする */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* 施工事例カードに影をつける */
+    background-color: #f4efe6;
+    /* 施工事例カードの背景色を白色にする */
+    padding: 10px 10px;
+    /* 施工事例カードの上下の余白を20px 10px、左右の余白を0pxにする */
+    border-radius: 10px;
+    /* 施工事例カードの角を丸くする */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* 施工事例カードに影をつける */
 }
 
 .staff-list {
-    display: grid;/* スタッフリストをグリッドレイアウトにする（マス目に並べる） */
-    grid-template-columns: repeat(3,1fr);/* スタッフリストを3列にする */
-    gap: 20px;/* スタッフリストのマス目の間隔を20pxにする */
+    display: grid;
+    /* スタッフリストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3, 1fr);
+    /* スタッフリストを3列にする */
+    gap: 20px;
+    /* スタッフリストのマス目の間隔を20pxにする */
     margin-top: 50px;
 }
 
@@ -156,23 +219,25 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 40%;
-    display: block;/* 画像をブロック要素にする */
-    margin: 0 auto;/* 画像を中央に配置する */
+    display: block;
+    /* 画像をブロック要素にする */
+    margin: 0 auto;
+    /* 画像を中央に配置する */
 }
 
 .staff-card {
     background-color: #f4efe6;
-    padding: 10px 10px ;
+    padding: 10px 10px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
- #history dl {
+#history dl {
     display: grid;
     grid-template-columns: 120px 1fr;
 }
 
-#history dd{
+#history dd {
     border-left: 3px var(--orange) solid;
     padding-left: 10px;
 }
@@ -182,7 +247,8 @@ nav a:hover {
     grid-template-columns: 120px 1fr;
 }
 
-#office dd,#office dt {
+#office dd,
+#office dt {
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
 }
@@ -191,41 +257,78 @@ nav a:hover {
     margin-top: 30px;
 }
 
+#contact form {
+    display: grid;
+    gap: 15px;
+    width: 70%;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* 入力欄の枠線を薄いグレーにする */
+    border-radius: 5px;
+    /* 入力欄の角を丸くする */
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+#contact form button {
+    background-color: var(--orange);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    color: #110701;
+}
 
 
 @media (max-width: 768px) {
     nav {
         display: none;
     }
+
     header {
         padding: 25px 20px;
         flex-wrap: wrap;
     }
+
     .menu-btn {
         display: block;
     }
+
     nav.open {
         display: block;
         width: 100%;
     }
+
     nav a {
         display: block;
     }
 
     .hero h2 {
-        font-size:28px;
+        font-size: 28px;
     }
 
     .service-list {
-        grid-template-columns: 1fr;/* サービスリストを1列にする */
+        grid-template-columns: 1fr;
+        /* サービスリストを1列にする */
     }
 
     .works-list {
-        grid-template-columns: 1fr;/* 施工事例リストを1列にする */
+        grid-template-columns: 1fr;
+        /* 施工事例リストを1列にする */
     }
 
     .staff-list {
         grid-template-columns: 1fr;
     }
 
-}    
+}

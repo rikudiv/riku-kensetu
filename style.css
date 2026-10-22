@@ -78,6 +78,7 @@ nav a:hover {
     padding: 10px 20px;/* ボタンの上下の余白を10px、左右の余白を20pxにする */
     border-radius: 10px;/* 角を丸くする */
     margin-top: 20px;/* ボタンの上の余白を20pxにする */
+    display: inline-block;/* ボタンをインラインブロックにする */
 }
 
 .estimate-btn:hover {
@@ -126,6 +127,7 @@ nav a:hover {
     display: grid;/* 施工事例リストをグリッドレイアウトにする（マス目に並べる） */
     grid-template-columns: repeat(3,1fr);/* 施工事例リストを3列にする */
     gap: 20px;/* 施工事例リストのマス目の間隔を20pxにする */
+    margin-top: 50px;/* 施工事例リストの上の余白を50pxにする */
 }
 
 .works-card img {
@@ -135,15 +137,59 @@ nav a:hover {
     border-radius: 10px;/* 施工事例カードの画像の角を丸くする */
 }
 
+.works-card {
+    background-color: #f4efe6;/* 施工事例カードの背景色を白色にする */
+    padding: 10px 10px ;/* 施工事例カードの上下の余白を20px 10px、左右の余白を0pxにする */
+    border-radius: 10px;/* 施工事例カードの角を丸くする */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);/* 施工事例カードに影をつける */
+}
 
+.staff-list {
+    display: grid;/* スタッフリストをグリッドレイアウトにする（マス目に並べる） */
+    grid-template-columns: repeat(3,1fr);/* スタッフリストを3列にする */
+    gap: 20px;/* スタッフリストのマス目の間隔を20pxにする */
+    margin-top: 50px;
+}
 
+.staff-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40%;
+    display: block;/* 画像をブロック要素にする */
+    margin: 0 auto;/* 画像を中央に配置する */
+}
 
+.staff-card {
+    background-color: #f4efe6;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+ #history dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
 
+#history dd{
+    border-left: 3px var(--orange) solid;
+    padding-left: 10px;
+}
 
+#office dl {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
 
+#office dd,#office dt {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
 
-
+#office .estimate-btn {
+    margin-top: 30px;
+}
 
 
 
@@ -176,6 +222,10 @@ nav a:hover {
 
     .works-list {
         grid-template-columns: 1fr;/* 施工事例リストを1列にする */
+    }
+
+    .staff-list {
+        grid-template-columns: 1fr;
     }
 
 }    
